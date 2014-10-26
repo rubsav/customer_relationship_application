@@ -26,7 +26,7 @@ end
 		puts " [2] Modify an existing contact"
 		puts " [3] Display all contacts"
 		puts " [4] Display one contact"
-		puts " [5] Display an attribute"
+		puts " [5] Display attributes"
 		puts " [6] Delete a contact"
 		puts " [7] Exit"
 		puts "Enter a number:"
@@ -67,7 +67,6 @@ end
 	end
 
 	def modify_contact
-		#put a menu for which attributes to modify instead of asking for input 
 		puts "What contact would you like to modify (Input id)?"
 		id = gets.chomp.to_i
 		puts "Modify an attribute of ID:#{id[0]} (enter yes or no):"
@@ -101,7 +100,7 @@ end
 	end
 
 	def display_attribute
-		puts "Please input the desired attribute: "
+		puts "Please input the desired attributes: "
 		puts "[1] First name"
 		puts "[2] Last name"
 		puts "[3] Email"
